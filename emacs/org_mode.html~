@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>org<sub>mode</sub></title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2013-01-07 15:52:14 CST"/>
+<meta name="author" content="Yun Nan"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="org-div-home-and-up" style="text-align:right;font-size:70%;white-space:nowrap;">
+ <a accesskey="h" href="index.html"> UP </a>
+ |
+ <a accesskey="H" href="index.html"> HOME </a>
+</div>
+
+<h1 class="title">org<sub>mode</sub></h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 作用 </a></li>
+<li><a href="#sec-2">2 基本用法 </a></li>
+<li><a href="#sec-3">3 列表 </a></li>
+<li><a href="#sec-4">4 注脚 </a></li>
+<li><a href="#sec-5">5 表格 </a></li>
+<li><a href="#sec-6">6 spreadsheet </a></li>
+<li><a href="#sec-7">7 链接 </a></li>
+<li><a href="#sec-8">8 Todo list </a>
+<ul>
+<li><a href="#sec-8.1">8.1 标题一样, 顶格, 后跟空格. 使用Shift+左右键改变状态. </a></li>
+<li><a href="#sec-8.2">8.2 Todo list默认只有两种状态: TODO和DONE. 使用下列代码来增加状态 </a></li>
+</ul>
+</li>
+<li><a href="#sec-9">9 导出成其他格式 </a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> 作用 </h2>
+<div class="outline-text-2" id="text-1">
+
+<ol>
+<li>
+major mode
+</li>
+<li>
+笔记+Todo list
+</li>
+</ol>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> 基本用法 </h2>
+<div class="outline-text-2" id="text-2">
+
+<ol>
+<li>
+标题
+1.1 一二三级标题分别用/* /** /***表示, 顶格, 后有空格. TAB折叠标题.
+1.2 连续点击Tab：全部折叠-&gt;展开所有标题-&gt;展开全部内容.
+1.3快捷键:
+
+</li>
+</ol>
+
+
+<pre class="example"><span class="linenr">1:  </span>C-c C-n 移动到下一个标题
+<span class="linenr">2:  </span>C-c C-p 移动到上一个标题
+<span class="linenr">3:  </span>C-c C-f 移动到和当前标题同等级的下一个标题
+<span class="linenr">4:  </span>C-c C-b 移动到和当前标题同等级的上衣个标题
+<span class="linenr">5:  </span>C-c C-u 移动到高一层的标题
+</pre>
+
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> 列表 </h2>
+<div class="outline-text-2" id="text-3">
+
+<ol>
+<li>
+子标题下, 更细的划分: '-', '+', '*', '1.', '1)'
+</li>
+<li>
+这里的'*'不能顶格.
+</li>
+<li>
+Shift+方向键改变层级.
+</li>
+</ol>
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> 注脚 </h2>
+<div class="outline-text-2" id="text-4">
+
+
+
+
+<pre class="example">[NUM]或者[fn:NAME]
+</pre>
+
+
+
+<p>
+在文章最后写下注脚
+</p>
+
+
+<pre class="example">[NUM] This link is: 
+[fn:NAME] This link is:
+</pre>
+
+
+
+<p>
+C-c C-c 相互跳转
+</p></div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> 表格 </h2>
+<div class="outline-text-2" id="text-5">
+
+<p>使用|开始表格,顶格.
+eg:
+</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="right" /><col align="left" />
+</colgroup>
+<tbody>
+<tr><td>1</td><td>one</td></tr>
+<tr><td>2</td><td>two</td></tr>
+<tr><td>3</td><td>This is a long chunk of text</td></tr>
+<tr><td>4</td><td>four</td></tr>
+</tbody>
+</table>
+
+在表格任意空白行内输入&lt;NUM&gt;来限制所在列的长度
+eg:
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="right" /><col align="left" />
+</colgroup>
+<tbody>
+<tr><td>1</td><td>one</td></tr>
+<tr><td>2</td><td>two</td></tr>
+<tr><td>3</td><td>This is a long chunk of text</td></tr>
+<tr><td>4</td><td>four</td></tr>
+</tbody>
+</table>
+
+加入分隔栏
+eg:
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="right" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">1</th><th scope="col">one</th></tr>
+<tr><th scope="col">2</th><th scope="col">two</th></tr>
+</thead>
+<tbody>
+<tr><td>3</td><td>This is a long chunk of text</td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+<div id="outline-container-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> spreadsheet </h2>
+<div class="outline-text-2" id="text-6">
+
+<p>表格计算功能
+</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="right" /><col align="right" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">a</th><th scope="col">b</th><th scope="col">'=($1<sup>2</sup>+$2<sup>2</sup>)<sup>0</sup>.5'</th></tr>
+</thead>
+<tbody>
+<tr><td>3</td><td>4</td><td>'=($1<sup>2</sup>+$2<sup>2</sup>)<sup>0</sup>.5'</td></tr>
+<tr><td>6</td><td>8</td><td></td></tr>
+<tr><td>1</td><td>2</td><td></td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> 链接 </h2>
+<div class="outline-text-2" id="text-7">
+
+
+
+
+<pre class="example">[[link][description]]
+</pre>
+
+
+
+
+<pre class="example">description: 描述
+link: 链接地址
+</pre>
+
+
+
+<p>
+eg:
+</p>
+
+
+<pre class="example">[[file://usr][用户文件]]
+</pre>
+
+
+
+<p>
+<a href="//usr">用户文件</a><br/>
+使用C-c C-o跳到链接处
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> Todo list </h2>
+<div class="outline-text-2" id="text-8">
+
+
+</div>
+
+<div id="outline-container-8.1" class="outline-3">
+<h3 id="sec-8.1"><span class="section-number-3">8.1</span> 标题一样, 顶格, 后跟空格. 使用Shift+左右键改变状态. </h3>
+<div class="outline-text-3" id="text-8.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-8.2" class="outline-3">
+<h3 id="sec-8.2"><span class="section-number-3">8.2</span> Todo list默认只有两种状态: TODO和DONE. 使用下列代码来增加状态 </h3>
+<div class="outline-text-3" id="text-8.2">
+
+
+
+
+<pre class="example"><span class="linenr">1:  </span>(setq org-todo-keywords
+<span class="linenr">2:  </span>      '((sequence "TODO" "DOING" "HANGUP" "|" "DONE" "CANCEL")))
+</pre>
+
+
+
+<p>
+"|"标识分隔, 前后使用不同的face
+C-c C-t 切换状态, 可以设置快捷键
+(setq org-todo-keywords
+'((sequence "TODO(t)" "DOING(i!)" "HANGUP(h!)" "|" "DONE(d!)" "CANCEL(c!)")))
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> 导出成其他格式 </h2>
+<div class="outline-text-2" id="text-9">
+
+<p>C-c C-e a 导出为文本格式
+C-c C-e h 导出未HTML格式
+</p>
+<p>
+M-x org-publish发布
+</p></div>
+</div>
+<div id="postamble">
+<p class="author"> Author: Yun Nan
+<a href="mailto:yunnan0317@ubuntu">&lt;yunnan0317@ubuntu&gt;</a>
+</p>
+<p class="date"> Date: 2013-01-07 15:52:14 CST</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>

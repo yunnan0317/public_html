@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="language for HTML, e.g. ‘en’ (org-export-default-language)" xml:lang="language for HTML, e.g. ‘en’ (org-export-default-language)">
+<head>
+<title>传说中的题目the title to be shown (default is the buffer name)</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="a date, an Org timestamp1, or a format string for format-time-string"/>
+<meta name="author" content="作者the author (default taken from user-full-name)"/>
+<meta name="description" content="the page description, e.g. for the XHTML meta tag"/>
+<meta name="keywords" content="the page keywords, e.g. for the XHTML meta tag"/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="org-div-home-and-up" style="text-align:right;font-size:70%;white-space:nowrap;">
+ <a accesskey="h" href="the ``up'' link of an exported page"> UP </a>
+ |
+ <a accesskey="H" href="the ``home'' link of an exported page"> HOME </a>
+</div>
+
+<h1 class="title">传说中的题目the title to be shown (default is the buffer name)</h1>
+
+<p>开头插入的描述性文字Some descriptive text to be inserted at the beginning.
+Several lines may be given.
+</p>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 top level </a>
+<ul>
+<li><a href="#sec-1.1">1.1 second level </a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 write org mode document </a></li>
+<li><a href="#sec-3">3 今晚吃啥是件大事</a>
+<ul>
+<li><a href="#sec-3.1">3.1 明早吃啥也是件大事</a></li>
+<li><a href="#sec-3.2">3.2 文档元数据 </a></li>
+<li><a href="#sec-3.3">3.3 内容元数据 </a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> top level </h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1.1" class="outline-3">
+<h3 id="sec-1.1"><span class="section-number-3">1.1</span> second level </h3>
+<div class="outline-text-3" id="text-1.1">
+
+<ul>
+<li id="sec-1.1.1">third level <br/>
+somethings to write
+A<sub>c</sub>
+
+<p>
+Myfavorite scenes are (in this order)
+</p><ol>
+<li>
+The attack of the Rohirrim
+</li>
+<li>
+Eowyn's fight with the witch king
+</li>
+</ol>
+
+<p>*this was already my favorite scene<sup><a class="footref" name="fnr.1" href="#fn.1">1</a></sup> in the book
+</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="right" /><col align="left" />
+</colgroup>
+<tbody>
+<tr><td>1</td><td>one</td></tr>
+<tr><td>2</td><td>two</td></tr>
+<tr><td>3</td><td>this is a long chunk of text</td></tr>
+</tbody>
+</table>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="right" /><col align="right" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">a</th><th scope="col">b</th><th scope="col"></th></tr>
+</thead>
+<tbody>
+<tr><td>3</td><td>4</td><td></td></tr>
+<tr><td>6</td><td>8</td><td></td></tr>
+<tr><td>1</td><td>2</td><td></td></tr>
+</tbody>
+</table>
+
+<a href="http://www.github.com">http://www.github.com</a>
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> <span class="todo TODO"> TODO</span> write org mode document </h2>
+<div class="outline-text-2" id="text-2">
+
+<p><a href="http://www.github.com">http://www.github.com</a>
+<b>我是粗体</b>
+<i>我是斜体</i>
+<del>我是删除线</del>
+<span style="text-decoration:underline;">我是下划线</span>
+哈哈<sub>我是下标</sub>
+嘿嘿<sup>我是上标</sup>
+<code>我是等宽字</code> <code>我也是等宽字</code>
+</p><ul>
+<li>
+我是无序列表1
+<ul>
+<li>
+我是无序列表2
+<ul>
+<li>
+我是无序列表3
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<hr/>
+<p>
+上面是个分割线<br/>
+^_^, 你好吗?
+</p><dl>
+<dt>这是一个描述列表</dt><dd>
+我是描述
+</dd>
+<dt>描述列表第二项</dt><dd>
+啊哈哈,我还是描述
+</dd>
+</dl>
+
+
+<hr/>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> 今晚吃啥是件大事 &nbsp;&nbsp;&nbsp;<span class="tag"><span class="_______1">我是可爱的标签1</span>&nbsp;<span class="_______2">我是可爱的标签2</span></span></h2>
+<div class="outline-text-2" id="text-3">
+
+
+</div>
+
+<div id="outline-container-3.1" class="outline-3">
+<h3 id="sec-3.1"><span class="section-number-3">3.1</span> 明早吃啥也是件大事 &nbsp;&nbsp;&nbsp;<span class="tag"><span class="___">吃啥呢</span>&nbsp;<span class="_____">到底吃啥呢</span></span></h3>
+<div class="outline-text-3" id="text-3.1">
+
+
+<hr/>
+<p>
+还有一些元数据
+</p></div>
+
+</div>
+
+<div id="outline-container-3.2" class="outline-3">
+<h3 id="sec-3.2"><span class="section-number-3">3.2</span> 文档元数据 </h3>
+<div class="outline-text-3" id="text-3.2">
+
+
+
+
+<pre class="example"><span class="linenr"> 1:  </span>#+TITLE:       传说中的题目the title to be shown (default is the buffer name)
+<span class="linenr"> 2:  </span>#+AUTHOR:      作者the author (default taken from user-full-name)
+<span class="linenr"> 3:  </span>#+DATE:        a date, an Org timestamp1, or a format string for format-time-string
+<span class="linenr"> 4:  </span>#+EMAIL:       his/her email address (default from user-mail-address)
+<span class="linenr"> 5:  </span>#+DESCRIPTION: the page description, e.g. for the XHTML meta tag
+<span class="linenr"> 6:  </span>#+KEYWORDS:    the page keywords, e.g. for the XHTML meta tag
+<span class="linenr"> 7:  </span>#+LANGUAGE:    language for HTML, e.g. ‘en’ (org-export-default-language)
+<span class="linenr"> 8:  </span>#+TEXT:        开头插入的描述性文字Some descriptive text to be inserted at the beginning.
+<span class="linenr"> 9:  </span>#+TEXT:        Several lines may be given.
+<span class="linenr">10:  </span>#+OPTIONS:     这个就厉害了，请看下面H:2 num:t toc:t \n:nil @:t ::t |:t ^:t f:t TeX:t ...
+<span class="linenr">11:  </span>#+BIND:        lisp-var lisp-val, e.g.: org-export-latex-low-levels itemize
+<span class="linenr">12:  </span>               You need to confirm using these, or configure org-export-allow-BIND
+<span class="linenr">13:  </span>#+LINK_UP:     the ``up'' link of an exported page
+<span class="linenr">14:  </span>#+LINK_HOME:   the ``home'' link of an exported page
+<span class="linenr">15:  </span>#+LATEX_HEADER: extra line(s) for the LaTeX header, like \usepackage{xyz}
+<span class="linenr">16:  </span>#+EXPORT_SELECT_TAGS:   Tags that select a tree for export
+<span class="linenr">17:  </span>#+EXPORT_EXCLUDE_TAGS:  Tags that exclude a tree from export
+<span class="linenr">18:  </span>#+XSLT:        the XSLT stylesheet used by DocBook exporter to generate FO file
+</pre>
+
+
+
+
+<p>
+OPTION元数据
+</p>
+
+
+<pre class="example"><span class="linenr"> 1:  </span>H:         设置标题的等级set the number of headline levels for export
+<span class="linenr"> 2:  </span>num:       turn on/off section-numbers
+<span class="linenr"> 3:  </span>toc:       turn on/off table of contents, or set level limit (integer)
+<span class="linenr"> 4:  </span>\n:        turn on/off line-break-preservation (DOES NOT WORK)
+<span class="linenr"> 5:  </span>@:         turn on/off quoted HTML tags
+<span class="linenr"> 6:  </span>::         turn on/off fixed-width sections
+<span class="linenr"> 7:  </span>|:         turn on/off tables
+<span class="linenr"> 8:  </span>^:         turn on/off TeX-like syntax for sub- and superscripts.  If
+<span class="linenr"> 9:  </span>           you write "^:{}", a_{b} will be interpreted, but
+<span class="linenr">10:  </span>           the simple a_b will be left as it is.
+<span class="linenr">11:  </span>-:         turn on/off conversion of special strings.
+<span class="linenr">12:  </span>f:         turn on/off footnotes like this[1].
+<span class="linenr">13:  </span>todo:      turn on/off inclusion of TODO keywords into exported text
+<span class="linenr">14:  </span>tasks:     turn on/off inclusion of tasks (TODO items), can be nil to remove
+<span class="linenr">15:  </span>           all tasks, todo to remove DONE tasks, or list of kwds to keep
+<span class="linenr">16:  </span>pri:       turn on/off priority cookies
+<span class="linenr">17:  </span>tags:      turn on/off inclusion of tags, may also be not-in-toc
+<span class="linenr">18:  </span>&lt;:         turn on/off inclusion of any time/date stamps like DEADLINES
+<span class="linenr">19:  </span>*:         turn on/off emphasized text (bold, italic, underlined)
+<span class="linenr">20:  </span>TeX:       turn on/off simple TeX macros in plain text
+<span class="linenr">21:  </span>LaTeX:     configure export of LaTeX fragments.  Default auto
+<span class="linenr">22:  </span>skip:      turn on/off skipping the text before the first heading
+<span class="linenr">23:  </span>author:    turn on/off inclusion of author name/email into exported file
+<span class="linenr">24:  </span>email:     turn on/off inclusion of author email into exported file
+<span class="linenr">25:  </span>creator:   turn on/off inclusion of creator info into exported file
+<span class="linenr">26:  </span>timestamp: turn on/off inclusion creation time into exported file
+<span class="linenr">27:  </span>d:         turn on/off inclusion of drawers
+</pre>
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-3.3" class="outline-3">
+<h3 id="sec-3.3"><span class="section-number-3">3.3</span> 内容元数据 </h3>
+<div class="outline-text-3" id="text-3.3">
+
+<ul>
+<li>
+分行区块
+</li>
+</ul>
+
+
+<p class="verse">
+我是分行区块<br/>
+我不用\\就可以换行哟<br/>
+直接回车就好啦亲<br/>
+</p>
+
+<ul>
+<li>
+缩进区块
+</li>
+</ul>
+
+<blockquote>
+
+<p>我是缩进区块哟，左右都有缩进啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+</p>
+</blockquote>
+
+<ul>
+<li>
+居中区块
+</li>
+</ul>
+
+
+<div style="text-align: center">
+<p>我是居中区块
+</p>
+</div>
+<ul>
+<li>
+代码区块
+</li>
+</ul>
+
+<p>我就是传说中的代码区块了,看我的字等宽不？
+</p><ul>
+<li>
+注释区块
+<div class="org-comment">
+</br>
+<p>
+</li>
+</ul>
+
+<p>你看我不到, 你看我不到#+BEGIN<sub>HTML</sub>
+&lt;/p&gt;
+&lt;/div&gt;
+</p>
+<ul>
+<li>
+例子
+
+</li>
+</ul>
+
+
+<pre class="example">我是个栗子
+</pre>
+
+
+
+<p>
+*表格和图片
+就可以通过label引用了
+</p><ul>
+<li>
+嵌入HTML
+<div class="cnblogs">
+<pre class="brush:cpp">
+int main(){
+return 0
+}
+</pre>
+</div>
+
+</li>
+</ul>
+
+
+</div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+<p class="footnote"><sup><a class="footnum" name="fn.1" href="#fnr.1">1</a></sup> new
+</p>
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: 作者the author (default taken from user-full-name)
+<a href="mailto:his/her email address (default from user-mail-address)">&lt;his/her email address (default from user-mail-address)&gt;</a>
+</p>
+<p class="date"> Date: a date, an Org timestamp1, or a format string for format-time-string</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>
